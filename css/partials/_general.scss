@@ -1,0 +1,76 @@
+body {
+  $bg: hsl(232, 19%, 15%);
+  $bg-pattern: hsl(232, 19%, 15%);
+  $card-bg: hsl(228, 28%, 20%);
+  $light-dark: hsl(230, 22%, 74%);
+  $text-color: hsl(0, 100%, 100%);
+  $toggle-bg: linear-gradient(hsl(210, 79%, 56%) to hsl(146, 68%, 55%));
+  width: 100%;
+  background: $bg;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+  .global-overview-item,
+  .daily-overview-item {
+    background: $card-bg;
+  }
+  h1,
+  h2,
+  p {
+    color: $text-color;
+  }
+  h1 {
+    font-size: clamp(1rem, 2rem, 3rem);
+  }
+  p {
+    font-size: clamp(0.5rem, 1rem, 2rem);
+  }
+  span {
+    font-size: clamp(0.6rem, 1rem, 1.5rem);
+  }
+  #header .header__toggle-ctn .toggle-btn {
+    @include gradientBackground;
+  }
+  #header .header__toggle-ctn .toggle-btn:before {
+    background: $bg;
+  }
+}
+
+.rate-up {
+  color: $green;
+}
+.rate-down {
+  color: $red;
+}
+// <=====> DARK MODE <=====>
+body.light-mode {
+  $bg: hsl(0, 100%, 100%);
+  $top-bg-pattern: hsl(225, 100%, 98%);
+  $card-bg: hsl(227, 47%, 96%);
+  $text-dark: hsl(228, 12%, 44%);
+  $text-color: hsl(230, 17%, 14%);
+  $toggle-bg: hsl(230, 22%, 74%);
+  background: $bg;
+
+  h1,
+  p {
+    color: $text-color;
+  }
+
+  .global-overview-item,
+  .daily-overview-item {
+    background: $card-bg;
+
+    &:hover {
+      background: hsl(227, 47%, 90%);
+    }
+  }
+  #header .header__toggle-ctn .toggle-btn {
+    background: $toggle-bg;
+  }
+  #header .header__toggle-ctn .toggle-btn:before {
+    background: $bg;
+  }
+}

@@ -1,0 +1,21 @@
+// <=====> OFF SCREEN <=====>
+@mixin off-screen {
+  position: relative;
+  left: -100000px;
+}
+
+// <=====> BACKGROUND GRADIENT <=====>
+@mixin gradientBackground {
+  background: linear-gradient(to right, hsl(210, 79%, 56%), hsl(146, 68%, 55%));
+  // color: $white-color;
+}
+
+// <=====> INSTAGRAM GRADIENT COLOR <=====>
+@mixin instagramColor {
+  color: linear-gradient(
+    to right,
+    hsl(37, 97%, 70%),
+    hsl(5, 77%, 71%),
+    hsl(329, 70%, 58%)
+  );
+}

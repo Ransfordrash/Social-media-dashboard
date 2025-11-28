@@ -1,0 +1,145 @@
+main {
+  width: 90%;
+  // overflow: hidden;
+
+  h2 {
+    margin-block: 1rem;
+  }
+
+  fieldset legend {
+    @include off-screen;
+  }
+  .facebook {
+    color: $facebook-bg;
+  }
+  .global-overview-item:has(.facebook) {
+    border-top: 0.3rem solid $facebook-bg;
+  }
+  .twitter {
+    color: $twitter-bg;
+  }
+  .global-overview-item:has(.twitter) {
+    border-top: 0.3rem solid $twitter-bg;
+  }
+  .instagram {
+    background: $instagram-bg;
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+  }
+  .global-overview-item:has(.instagram) {
+    border-image: $instagram-bg 0.5;
+    border-top: 0.3rem solid transparent;
+    mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+  }
+  .youtube {
+    color: $youtube-bg;
+  }
+  .global-overview-item:has(.youtube) {
+    border-top: 0.3rem solid $youtube-bg;
+  }
+}
+
+.global-overview,
+.daily-overview {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 2rem;
+}
+.global-overview-item,
+.daily-overview-item {
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  background: $card-bg;
+  padding: 1.5rem 3rem;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: hsl(228, 28%, 30%);
+  }
+}
+
+.username {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+
+  i {
+    font-size: 2.5rem;
+  }
+  p {
+    color: $light-dark;
+  }
+}
+.followers {
+  margin-block: 1rem;
+  text-align: center;
+  p {
+    font-size: clamp(2rem, 2.5rem, 3rem);
+    line-height: 1;
+    font-weight: 700;
+  }
+  span {
+    text-align: center;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    color: $light-dark;
+    font-weight: 450;
+  }
+}
+
+.daily-overview-item {
+  padding: 1.5rem;
+  gap: 1.3rem;
+}
+
+.overview-header,
+.overview-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.overview-header {
+  align-items: center;
+
+  i {
+    font-size: 2.5rem;
+  }
+  p {
+    color: $light-dark;
+  }
+}
+.overview-details {
+  align-items: end;
+  p {
+    font-size: clamp(2rem, 2.5rem, 3rem);
+    line-height: 1;
+    font-weight: 700;
+  }
+}
+
+// <=================> TABLET DEVICES <=================>
+
+@media screen and (max-width: 1080px) {
+  .global-overview,
+  .daily-overview {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// <=================> MOBILE DEVICES <=================>
+
+@media screen and (max-width: 550px) {
+  .global-overview,
+  .daily-overview {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <=====> BOXICONS CDN <=====> -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <section class="header__description">
+        <h1>Social Media Dashboard</h1>
+        <p>Total Followers: 23,004</p>
+      </section>
+      <section class="header__toggle-ctn">
+        <p>Dark Mode</p>
+        <div class="toggle-btn"></div>
+      </section>
+    </header>
+    <main>
+      <fieldset>
+        <legend>Social Media Trend</legend>
+        <section class="global-overview">
+          <!-- <=====> first article <=====> -->
+          <article class="global-overview-item">
+            <div class="username">
+              <i class="bx facebook bxl-facebook-square"></i>
+              <p>@nathanf</p>
+            </div>
+            <div class="followers">
+              <p>1987</p>
+              <span>FOLLOWERS</span>
+            </div>
+            <span class="rate-up"><i class="bx bx-caret-up"></i> 12 Today</span>
+          </article>
+         <!-- <=====> second article <=====> -->
+          <article class="global-overview-item">
+            <div class="username">
+              <i class="bx twitter bxl-twitter"></i>
+              <p>@nathanf</p>
+            </div>
+            <div class="followers">
+              <p>1044</p>
+              <span>FOLLOWERS</span>
+            </div>
+            <span class="rate-up"><i class="bx bx-caret-up"></i>99 Today</span>
+          </article>
+          <!-- <=====> third article <=====> -->
+          <article class="global-overview-item">
+            <div class="username">
+              <i class="bx instagram bxl-instagram"></i>
+              <p>@nathanf</p>
+            </div>
+            <div class="followers">
+              <p>11k</p>
+              <span>FOLLOWERS</span>
+            </div>
+            <span class="rate-up"><i class="bx bx-caret-up"></i> 1099 Today</span>
+          </article>
+          <!-- <=====> fourth article <=====> -->
+          <article class="global-overview-item">
+            <div class="username">
+              <i class="bx youtube bxl-youtube"></i>
+              <p>@nathanf</p>
+            </div>
+            <div class="followers">
+              <p>8239</p>
+              <span>SUBSCRIBERS</span>
+            </div>
+            <span class="rate-down"><i class="bx bx-caret-down"></i> 144 Today</span>
+          </article>
+        </section>
+        <fieldset>
+          <h2>Overview - Today</h2>
+          <section class="daily-overview">
+            <!-- <=====> FACEBOOK OVERVIEW <=====> --> 
+              <article class="daily-overview-item">
+                <div class="overview-header">
+                  <p>Page Views</p>
+                  <i class="bx facebook bxl-facebook-square"></i>
+                </div>
+                <div class="overview-details">
+                  <p>87</p>
+                  <span class="rate-up"><i class="bx bx-caret-up"></i>3%</span>
+                </div>
+              </article>
+              <article class="daily-overview-item">
+                <div class="overview-header">
+                  <p>Likes</p>
+                  <i class="bx facebook bxl-facebook-square"></i>
+                </div>
+                <div class="overview-details">
+                  <p>52</p>
+                  <span class="rate-down"><i class="bx bx-caret-down"></i>2257%</span>
+                </div>
+              </article>
+              <!-- <=====> INSTAGRAM OVERVIEW <=====> --> 
+              <article class="daily-overview-item">
+                <div class="overview-header">
+                  <p>Profiles Views</p>
+                  <i class="bx instagram bxl-instagram"></i>
+                </div>
+                <div class="overview-details">
+                  <p>52k</p>
+                  <span class="rate-up"><i class="bx bx-caret-up"></i>1375%</span>
+                </div>
+              </article>
+              <article class="daily-overview-item">
+                <div class="overview-header">
+                  <p>Likes</p>
+                  <i class="bx instagram bxl-instagram"></i>
+                </div>
+                <div class="overview-details">
+                  <p>5462</p>
+                  <span class="rate-down"><i class="bx bx-caret-down"></i>2257%</span>
+                </div>
+              </article>
+              <!-- <=====> TWITTER OVERVIEW <=====> --> 
+              <article class="daily-overview-item">
+                <div class="overview-header">
+                  <p>Retweets</p>
+                  <i class="bx twitter bxl-twitter"></i>
+                </div>
+                <div class="overview-details">
+                  <p>117</p>
+                  <span class="rate-up"><i class="bx bx-caret-up"></i>303%</span>
+                </div>
+              </article>
+              <article class="daily-overview-item">
+                <div class="overview-header">
+                  <p>Likes</p>
+                  <i class="bx twitter bxl-twitter"></i>
+                </div>
+                <div class="overview-details">
+                  <p>507</p>
+                  <span class="rate-up"><i class="bx bx-caret-up"></i>553%</span>
+                </div>
+              </article>
+              <!-- <=====> YOUTUBE OVERVIEW <=====> --> 
+              <article class="daily-overview-item">
+                <div class="overview-header">
+                  <p>Total Views</p>
+                  <i class="bx youtube bxl-youtube"></i>
+                </div>
+                <div class="overview-details">
+                  <p>1407</p>
+                  <span class="rate-down"><i class="bx bx-caret-down"></i>12%</span>
+                </div>
+              </article>
+              <article class="daily-overview-item">
+                <div class="overview-header">
+                  <p>Likes</p>
+                  <i class="bx youtube bxl-youtube"></i>
+                </div>
+                <div class="overview-details">
+                  <p>107</p>
+                  <span class="rate-down"><i class="bx bx-caret-down"></i>10%</span>
+                </div>
+              </article>
+            </section>
+        </fieldset>
+      </fieldset>
+    </main>
+    <footer class="attribution">
+    <p>  Challenge by
+      <a
+        rel="noopener"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://discord.gg/M6PRJNqa">@Ransford_Dev</a>.</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

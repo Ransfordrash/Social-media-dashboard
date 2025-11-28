@@ -1,0 +1,14 @@
+footer {
+  margin-block: 3rem;
+  border-top: 1px solid gray;
+  padding-block-start: 3rem;
+  width: 90%;
+  text-align: center;
+  
+  p {
+    font-size: 2rem;
+  }
+  a {
+    color: $twitter-bg;
+  }
+}
