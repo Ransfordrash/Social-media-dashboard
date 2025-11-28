@@ -29,7 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [(https://ransfordrash.github.io/Social-media-dashboard/)]
+- Github Repo URL: [https://github.com/Ransfordrash/Social-media-dashboard.git]
 
 ### Built with
 
