@@ -44,7 +44,7 @@ Users should be able to:
 
 ### What I learned
 
-Since I started coding i've try to build anything on my own so when i tried this challenge i can see at least am getting better than before and my favorite part in this mini project is the theme switch i struggle for goggling to find the right resource all thanks to Kelvin Powel the youtuber.
+Since I started coding i've never try to build anything on my own so when i tried this challenge i can see at least am getting better than before and my favorite part in this mini project is the theme switch i struggle for goggling to find the right resource all thanks to Kelvin Powel the youtuber.
 
 ### Continued development
 
