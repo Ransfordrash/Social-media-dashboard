@@ -21,12 +21,6 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Toggle color theme to their preference
 
-### Screenshot
-
-![Desktop version](image.png)
-![Tablet version](image-1.png)
-![Mobile version](image-2.png)
-
 ### Links
 
 - Solution URL: [(https://ransfordrash.github.io/Social-media-dashboard/)]
